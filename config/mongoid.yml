@@ -1,0 +1,24 @@
+development:
+  sessions:
+    default:
+      hosts:
+      - localhost:27017
+      database: mongoid
+      options:
+        pool_size: 35
+
+production:
+  sessions:
+    default:
+      hosts:
+      - localhost:27017
+      database: mongoid
+      options:
+        pool_size: 35
+
+test:
+  sessions:
+    default:
+      hosts:
+      - localhost:27017
+      database: mongoid
