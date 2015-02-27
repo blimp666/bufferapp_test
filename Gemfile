@@ -42,3 +42,5 @@ gem 'buffer', :github => 'bufferapp/buffer-ruby'
 gem 'omniauth'
 gem 'omniauth-buffer2'
 gem 'mongoid'
+
+gem 'therubyracer'

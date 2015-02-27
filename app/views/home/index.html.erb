@@ -1,6 +1,9 @@
+<%= javascript_include_tag :application %>
+
 <% if @user %>
 Your uid is <%= @user.uid %>
-<%= link_to "Logout", destroy_session_path %>
+<%= link_to "Logout", "/session/", method: :delete %>
 <% else %>
+You are not logged in
 <%= link_to "Login", "/auth/buffer"%>
 <% end %>
