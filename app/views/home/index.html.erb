@@ -1,0 +1,6 @@
+<% if @user %>
+Your uid is <%= @user.uid %>
+<%= link_to "Logout", destroy_session_path %>
+<% else %>
+<%= link_to "Login", "/auth/buffer"%>
+<% end %>
