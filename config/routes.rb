@@ -54,5 +54,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+  resource :session, only: [:create, :destroy]
   get '/auth/:provider/callback', to: 'sessions#create'
 end
